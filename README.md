@@ -2,12 +2,13 @@
 
 > Module 00
 >
-> - :white_check_mark: [Crear la maquina virtual](#crear-la-maquina-virtual)  
+> - :bookmark_tabs: [Crear la maquina virtual](#crear-la-maquina-virtual)  
 >
 > - :white_check_mark: [Evaluar](#evaluar-la-maquina-virtual)
 
 
-##Crear la maquina virtual
+
+
 
 
 Seguir la guía de <a href="https://github.com/gemartin99/Born2beroot-Tutorial">Gerard Martinez</a>
