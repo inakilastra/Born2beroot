@@ -6,10 +6,7 @@
 >
 > - :white_check_mark: [Evaluar](#evaluar-la-maquina-virtual)
 
-
-
-
-
+<br /><br /><br /><br />
 
 Seguir la guía de <a href="https://github.com/gemartin99/Born2beroot-Tutorial">Gerard Martinez</a>
 
@@ -21,7 +18,7 @@ Tienes que seguir esta miniguia que te dejo debajo.
 
 Y despues conectarte con **ssh tuUsuario@192.168.56.1 -p 4242**
 
-
+<br /><br />
 
 ### **Comprobrar que tenemos la tarjeta de red de VirtualBox configurada:**
 
@@ -35,7 +32,7 @@ En caso contrario
 
 ![image](https://github.com/user-attachments/assets/a5036f80-223b-4b14-aba9-4c05c7a22194)
 
-
+<br /><br />
 
 ### **Comprobrar que la tarjeta de red de VirtualBox esta "despierta", que tiene IP asignada**
 
@@ -69,7 +66,7 @@ Volvemos a deshabilitar el Adaptador 2
 
 Ahora ya podemos continuar.
 
-
+<br /><br />
 
 ### La configuración tiene que quedar asi:
 
@@ -79,8 +76,7 @@ Ahora ya podemos continuar.
 
 ![image](https://github.com/user-attachments/assets/f257c878-4531-4ebf-96a8-e29b889530d7)
 
-
-
+<br /><br /><br /><br />
 
 ## Evaluar la maquina virtual
 
@@ -88,11 +84,13 @@ Ahora ya podemos continuar.
 >
 > - Es un programa que simula una maquina a la que se le instala un SO, con la ventaja de que se puede exportar, duplicar, eliminar....																								
 
+<br /><br />
 
 > **Elección del sistema operativo.**
 >
 > - Debian esta enfocado a un entorno más basico y Rocky a uno profesional																								
 
+<br /><br />
 
 > **Diferencias básicas entre Rocky y Debian.**
 >
@@ -100,13 +98,17 @@ Ahora ya podemos continuar.
 >
 > - Rocky es una distribución comercial y estable, compatible con RHEL (Red Hat Enterprise Linux) y con soporte empresarial
 
+<br /><br />
 
 > **El propósito de las máquinas virtuales.**
 >
 > - Ejecutar para hacer pruebas o para producción diferentes maquinas y SO y asi por ejemplo correr Linux en una maquina tiene Windows
 
+<br /><br />
 
 > **Si el estudiante evaluado eligió Rocky: qué son SELinux y DNF.**
+
+<br /><br />
 
 > **Si el estudiante evaluado eligió Debian: la diferencia entre aptitude y apt, y qué es APPArmor.**
 >
@@ -118,6 +120,7 @@ Ahora ya podemos continuar.
 >
 > - APPArmor es un módulo de seguridad del kernel Linux que permite al administrador del sistema restringir las capacidades de un programa.
 
+<br /><br />
 
 > **LVM**
 >
@@ -125,17 +128,21 @@ Ahora ya podemos continuar.
 >
 > - Proporciona un método para asignar espacio en dispositivos de almacenamiento masivo, que es más flexible que los esquemas de particionado convencionales para almacenar volúmenes		
 
+<br /><br />
 
 > **Durante la defensa, un script debe mostrar información cada 10 minutos.**
 
+<br /><br />
 
 > **Asegúrate de que la máquina no tenga un entorno gráfico al inicio**
 >
 > ls /usr/bin/*session
 
+<br /><br />
 
 > **Se solicitará una contraseña antes de intentar conectarse a esta máquina**
 
+<br /><br />
 
 > **Conéctate con un usuario con la ayuda del estudiante evaluado. Este usuario no debe ser root.**
 >
@@ -143,6 +150,7 @@ Ahora ya podemos continuar.
 >
 > id tuUsuario		
 
+<br /><br />
 
 > **Comprueba que el servicio UFW esté iniciado con la ayuda del evaluador.**
 >
@@ -152,6 +160,7 @@ Ahora ya podemos continuar.
 > 4242      ALLOW    Anywhere
 > 4242 (v6) ALLOW    Anywhere (v6)	
 
+<br /><br />
 
 > **Comprueba que el servicio SSH esté iniciado con la ayuda del evaluador.**
 >
@@ -161,6 +170,7 @@ Ahora ya podemos continuar.
 > Server listening on 0.0.0.0 port 4242
 > Server listening on :: port 4242
 
+<br /><br />
 
 > **Comprueba que el sistema operativo elegido sea Debian o Rocky con la ayuda del evaluador**
 >
@@ -168,9 +178,11 @@ Ahora ya podemos continuar.
 >
 > #1 SMP PREEMPT_DYNAMIC Debian 6.1.90-1 (2024-05-03)			
 
+<br /><br />
 
 > **Exista el usuario con el login evaluado**
 
+<br /><br />
 
 > **Comprueba que se haya agregado y que pertenezca a los grupos "sudo" y "user42".**
 >
@@ -179,10 +191,12 @@ Ahora ya podemos continuar.
 >
 > id tuUsuario
 
+<br /><br />
 
 > **crea un nuevo usuario**
 > sudo adduser noroot	
 
+<br /><br />
 
 > **Asígnale una contraseña de tu elección, respetando las reglas del subject**
 >
@@ -202,11 +216,13 @@ Ahora ya podemos continuar.
 >
 > - enforce_for_root ➤ Implementaremos esta política para el usuario root.
 
+<br /><br />
 
 > **Cómo ha configurado las reglas solicitadas en el subject en su máquina virtual**
 >
 > nano /etc/pam.d/common-password				
 
+<br /><br />
 
 > **El estudiante evaluado crea un grupo llamado "evaluating" frente a ti y asígnalo a este usuario**
 >
@@ -214,6 +230,7 @@ Ahora ya podemos continuar.
 >
 > sudo adduser name_user evaluating		
 
+<br /><br />
 
 > **Ventajas de esta política de contraseñas, así como las ventajas y desventajas de su implementación**
 >
@@ -221,45 +238,55 @@ Ahora ya podemos continuar.
 >
 > - Desventajas: Mayor dificultad al tener que recodar y modificar
 
+<br /><br />
 
 > **Comprueba que el nombre de host de la máquina esté formateado correctamente de la siguiente manera: login42 (login del estudiante evaluado)**
 >
 > hostname		
 
+<br /><br />
 
 > **Modifica este nombre de host reemplazando el login por el tuyo y reinicia la maquina**
 >
 > sudo nano /etc/hostname
 
+<br /><br />
 
 > **Si al reiniciar, el nombre de host no se ha actualizado, la evaluación se detiene aquí.**
 
+<br /><br />
 
 > **Restaurar la máquina al nombre de host original.**
 >
 > sudo nano /etc/hostname
 
+<br /><br />
 
 > **Ver las particiones de esta máquina virtual.**
 >
 > lsblk	
 
+<br /><br />
 
 > **Compara la salida con el ejemplo proporcionado en el subject**
 
+<br /><br />
 
 > **breve explicación de cómo funciona LVM y de qué se trata.**
 
+<br /><br />
 
 > **Comprueba que el programa "sudo" esté instalado**
 >
 > dpkg -s sudo	
 
+<br /><br />
 
 > **mostrar cómo asignar tu nuevo usuario al grupo "sudo"**
 >
 > sudo adduser noroot sudo	
 
+<br /><br />
 
 > **explicar el valor y el funcionamiento de sudo usando ejemplos de su elección**
 >
@@ -267,11 +294,13 @@ Ahora ya podemos continuar.
 >
 > - Esto significa que los usuarios normales pueden realizar tareas administrativas sin tener que saber la contraseña de root.
 
+<br /><br />
 
 > **mostrarte la implementación de las reglas impuestas por el subject**
 >
 > nano /etc/sudoers.d/sudo_config
 
+<br /><br />
 
 > **Verifica que la carpeta "/var/log/sudo/" exista y tenga al menos un archivo**
 >
@@ -283,24 +312,29 @@ Ahora ya podemos continuar.
 >
 > cat sudo_config
 
+<br /><br />
 
 > **Comprueba el contenido de los archivos de esta carpeta. Deberías ver un historial de los comandos utilizados con sudo**
 >
 > - Ver listado de comandos sudo	
 
+<br /><br />
 
 > **intenta ejecutar un comando a través de sudo**
 >
 > sudo nano sudo_config
 
+<br /><br />
 
 > **Observa si el(los) archivo(s) en "/var/log/sudo/" se han actualizado**
 
+<br /><br />
 
 > **Comprueba que el programa "UFW" esté instalado correctamente en la máquina virtual.**
 >
 > dpkg -s ufw
 
+<br /><br />
 
 > **Enumera las reglas activas en UFW (o Firewalld). Debe existir una regla para el puerto 4242.**
 >
@@ -308,6 +342,7 @@ Ahora ya podemos continuar.
 >
 > sudo ufw status numbered
 
+<br /><br />
 
 > **Agrega una nueva regla para abrir el puerto 8080. Comprueba que se haya agregado esta regla enumerando las reglas activas.**
 >
@@ -315,21 +350,25 @@ Ahora ya podemos continuar.
 >
 > sudo ufw status numbered
 
+<br /><br />
 
 > **elimina esta nueva regla con la ayuda del estudiante evaluado**
 >
 > sudo ufw delete num_rule		
 
+<br /><br />
 
 > **Comprueba que el servicio SSH esté instalado correctamente en la máquina virtual.**
 >
 > sudo service ssh status	
 
+<br /><br />
 
 > **Comprueba que esté funcionando correctamente.**
 >
 > sudo service ssh status	
 
+<br /><br />
 
 > **explicarte básicamente qué es SSH y el valor de usarlo**
 >
@@ -337,21 +376,25 @@ Ahora ya podemos continuar.
 >
 > - Se utiliza comúnmente para la administración remota de servidores, transferencias de archivos seguras y túneles de datos cifrados.
 
+<br /><br />
 
 > **Verifica que el servicio SSH solo use el puerto 4242.**
 >
 > ssh tuUsuario@192.168.56.1 -p 8080
 
+<br /><br />
 
 > **usar SSH para iniciar sesión con el usuario recién creado**
 >
 > ssh noroot@192.168.56.1 -p 4242	
 
+<br /><br />
 
 > **debes asegurarte de que no se pueda usar SSH con el usuario "root" como se indica en el subject**
 >
 > ssh root@192.168.56.1 -p 4242
 
+<br /><br />
 
 > **Cómo funciona su script mostrándote el código.**
 >
@@ -361,31 +404,38 @@ Ahora ya podemos continuar.
 >
 > nano monitoring.sh	
 
+<br /><br />
 
 > **Qué es "cron".**
 >
 > - Cron en Linux es un demonio (proceso en segundo plano) que se ejecuta automáticamente en un sistema operativo Linux y permite programar la ejecución de tareas o scripts en intervalos específicos de tiempo. Estas tareas pueden ser simples comandos del sistema operativo, scripts más complejos o incluso aplicaciones completas.
 
+<br /><br />
 
 > **Cómo el estudiante evaluado configuró su script para que se ejecute cada 10 minutos desde el inicio del servidor.**
 >
 > sudo crontab -u root -e
 
+<br /><br />
 
 > **el estudiante evaluado debe asegurarse de que este script se ejecute cada minuto**
 >
 > */1 * * * * sh /home/ilastra-/monitoring.sh
 
+<br /><br />
 
 > **el estudiante evaluado debe hacer que el script deje de ejecutarse cuando el servidor se haya iniciado, pero sin modificar el script en sí.**
 >
 > sudo /etc/init.d/cron stop
 
+<br /><br />
 
 > **Para comprobar este punto, tendrás que reiniciar el servidor una última vez**
 
+<br /><br />
 
 > **Al iniciar, será necesario verificar que el script sigue existiendo en el mismo lugar, que sus permisos no han cambiado y que no ha sido modificado.**
 >
 > sudo crontab -u root -e
 
+<br /><br /><br /><br />
